@@ -1,0 +1,36 @@
+//print from n to 1
+
+#include <iostream>
+
+using namespace std;
+
+int cnt = 1;
+
+void print(int a){
+
+    if(a==cnt-1){
+ 
+       return ;
+    
+}
+   
+ else{
+  
+      cout<<a<<" ";
+
+        a--;
+    
+    print(a);
+ 
+   }
+
+}
+
+int main() {
+ 
+   print(5);
+
+ 
+   return 0;
+
+}
