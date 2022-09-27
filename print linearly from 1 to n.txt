@@ -1,0 +1,36 @@
+// print linearly from 1 to n
+
+#include <iostream>
+
+using namespace std;
+
+int cnt = 1;
+
+void print(int a){
+
+    if(cnt==a+1){
+
+        return ;
+   
+ }
+ 
+   else{
+       
+ cout<<cnt<<" ";
+  
+      cnt++;
+     
+   print(a);
+ 
+   }
+
+}
+
+int main() {
+ 
+   print(5);
+
+  
+  return 0;
+
+}
