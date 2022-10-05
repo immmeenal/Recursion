@@ -1,0 +1,18 @@
+//sum of n numbers 
+
+#include <iostream>
+using namespace std;
+
+int f(int a,int sum){
+    if(a==0){
+        return sum;
+    }
+    f(a-1,sum+a);
+}
+int main() {
+    int n;
+    cin>>n;
+    cout<<f(n,0);
+
+    return 0;
+}

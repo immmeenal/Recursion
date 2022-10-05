@@ -1,0 +1,20 @@
+// Number of Digits
+// Given the number 'n', find out and return the number of digits present in a number recursively.
+#include <iostream>
+using namespace std;
+int cnt=0;
+int f(int n){
+    if(n==0){
+        return cnt;
+    }
+    cnt++;
+    f(n/10);
+    
+}
+int main() {
+    int n;
+    cin>>n;
+    cout<<f(n);
+
+    return 0;
+}
