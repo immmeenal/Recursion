@@ -1,0 +1,22 @@
+//sum of array
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int sumi(int arr[],int n){
+   if(n==0){
+       return 0;
+   }
+   return sumi(arr,n-1)+arr[n-1];
+    
+}
+int main() {
+int arr[100];
+int n;
+cin>>n;
+for(int i=0;i<n;i++){
+    cin>>arr[i];
+}
+cout<<sumi(arr,n);
+    return 0;
+}
