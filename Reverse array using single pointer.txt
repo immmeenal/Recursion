@@ -1,0 +1,24 @@
+// Reverse array using single pointer
+
+#include <iostream>
+using namespace std;
+void swapi(int l,int arr[],int n){
+    if(l>=n/2){
+        return;
+    }
+    swap(arr[l],arr[n-l-1]);
+    swapi(l+1,arr,n);
+}
+int main() {
+ int arr[100];
+ int n;
+ cin>>n;
+ for(int i=0;i<n;i++){
+     cin>>arr[i];
+ }
+ swapi(0,arr,n);
+  for(int i=0;i<n;i++){
+     cout<<arr[i];
+ }
+    return 0;
+}
