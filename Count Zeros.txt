@@ -1,0 +1,27 @@
+//Count Zeros
+//Given an integer N, count and return the number of zeros that are present in the given integer using recursion.#include <iostream>
+
+#include <iostream>
+using namespace std;
+int cnt=0;
+int count(int n){
+    if(n==0){
+    return 1;
+    }
+    if(n>0){
+    int r = n%10;
+    if(r==0){
+        cnt++;
+    }
+    int q=n/10;
+    count(q);
+    return cnt;
+    }
+    
+}
+int main() {
+    int n;
+    cin>>n;
+    cout<<count(n);
+    return 0;
+}

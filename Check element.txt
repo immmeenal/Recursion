@@ -1,0 +1,26 @@
+//Check element
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+bool check(int arr[],int p,int n){
+  if(n==0){
+      return false;
+  }
+  
+  if(arr[0]==p){
+      return true;
+  }
+  check(arr+1,p,n-1);
+    
+}
+int main() {
+int n ,p, arr[100];
+cin>>n;
+for(int i =0;i<n;i++){
+    cin>>arr[i];
+}
+cin>>p;
+cout<<check(arr,p,n);
+    return 0;
+}

@@ -1,0 +1,19 @@
+//Multiplication (Recursive)
+//Given two integers M & N, calculate and return their multiplication using recursion. You can only use subtraction and addition for your calculation. No other operators are allowed.
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int multiplyNumbers(int a, int b) {
+    if(b==0){
+      return 0;
+  }
+  return a+multiplyNumbers(a,b-1);
+
+}
+int main() {
+ int a,b;
+ cin>>a>>b;
+ cout<<multiplyNumbers(a,b);
+    return 0;
+}
