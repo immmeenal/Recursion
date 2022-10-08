@@ -1,0 +1,25 @@
+// Sum of digits (recursive)
+// Write a recursive function that returns the sum of the digits of a given integer.
+#include <iostream>
+#include <cmath>
+using namespace std;
+int i=0;
+int sumOfDigits(int n) {
+    if(n==0){
+        return i;
+    }
+    i=i+(n%10);
+    int c = n/10;
+    sumOfDigits(c);
+    
+    
+    
+}
+
+int main() {
+    int k;
+    cin>>k;
+    cout<<sumOfDigits(k);
+
+    return 0;
+}
