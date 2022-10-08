@@ -1,0 +1,28 @@
+//First Index of Number
+#include <iostream>
+#include <cmath>
+using namespace std;
+int j=0;
+int firstIndex(int a[], int n, int x) {
+    if(n==0){
+        return -1;
+    }
+    if(a[0]==x){
+        return j;
+    }
+    j++;
+    firstIndex(a+1,n-1,x);
+    
+}
+
+int main() {
+    int arr[100],i,n,x;
+    cin>>n;
+    for(i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    cin>>x;
+    cout<<firstIndex(arr,n,x);
+
+    return 0;
+}
