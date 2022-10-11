@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
-
+//not completed yet
 using namespace std;
 void Tshirt(char first[],char second[],int p1x,int p2x,	char c1, char c2){
 	int p1 = sizeof(first)/sizeof(*first);
